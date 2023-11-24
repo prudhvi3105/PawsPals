@@ -35,7 +35,7 @@ function ValidateRegistrationForm(){
 	var	emailValidationMessage;
 
 	if(RegiName == ""){
-		ShowErrorMessage('RegiName',"Please fill the filed.");
+		ShowErrorMessage('RegiName',"Please fill the field.");
 		return false;
 	}else if(RegiName.length < 3 || RegiName.length > 20){
 		ShowErrorMessage('RegiName',"Name should be minimum 3 and maximum 20 characters long.");
@@ -62,7 +62,7 @@ function ValidateRegistrationForm(){
 	}
 
 	if(RegiPassword != RegiConfirmPassword){
-		ShowErrorMessage('RegiConfirmPassword',"Password not match.");
+		ShowErrorMessage('RegiConfirmPassword',"Password do not match.");
 		return false;
 	}
 
